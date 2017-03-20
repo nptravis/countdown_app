@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+</head>
+<style>
+body {
+	margin-top: 100px;
+	background-image: url('http://www.fleewinter.com/wp-content/uploads/2014/04/boat_wooden_canoe_local_thailand_beach_holiday_experience2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jumbotron {
+	background-color: rgba(255, 172, 84, .8);
+}
+.well {
+	min-height: 80px;
+}
+</style>
+
+<body>
+<div class="container container-fluid">
+	<div class="jumbotron">
+	<div class="row">
+			<div class="col-sm-4">
+			<h3>Today's Date is: </h3>
+			<div id="dat" class="well">
+			</div>
+			</div>
+
+			<div class="col-sm-4">
+			<h3>Total Working Days left: </h3>
+			<div id="left" class="well"></div>
+			</div>
+
+			<div class="col-sm-4">
+			<h3>Days left in the classroom: </h3>
+			<div id="after" class="well"></div> 
+	</div>
+	<button id="btn" class="btn btn-primary btn-block">How Many Days Are Left?</button>
+</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
