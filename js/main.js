@@ -22,8 +22,10 @@ var workingDays = {
 
 var dat = document.getElementById("dat");
 var after = document.getElementById("after");
+var body = document.getElementById("body");
 var btn = document.getElementById("btn");
 var left = document.getElementById("left");
+var dailyMessage = document.getElementById("daily-message");
 var days = workingDays.march.length + workingDays.april.length + workingDays.may.length + workingDays.june.length
 
 var todayDate = mm + '/' + dd + '/' + yyyy;
@@ -58,7 +60,11 @@ btn.addEventListener("click", function(){
 
 };
 
- // left.innerHTML = "<h4>" +diffDays+ "</h4>";
+ if (today.getDate() == 21) {
+  body.style.backgroundImage = "url('http://www.questexchange.org/wpsite-x/wp-content/uploads/2015/04/Historic-House-Thailand.jpg')";
+  dailyMessage.innerHTML = "<h2>This will be my face if this works: </h2><img src='https://media.tenor.co/images/f1faa8fbf39675dd8e1bd931bc151d1f/raw' >";
+
+ }
 });
 
 
