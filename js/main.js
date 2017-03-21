@@ -1,4 +1,4 @@
-var today = new Date();
+var today = new Date(2017, 2, 22);
 var dd = today.getDate();
 var mm = today.getMonth()+1;
 var yyyy = today.getFullYear();
@@ -62,9 +62,16 @@ btn.addEventListener("click", function(){
 
  if (today.getDate() == 21) {
   body.style.backgroundImage = "url('http://www.questexchange.org/wpsite-x/wp-content/uploads/2015/04/Historic-House-Thailand.jpg')";
-  dailyMessage.innerHTML = "<h2>This will be my face if this works: </h2><img src='https://media.tenor.co/images/f1faa8fbf39675dd8e1bd931bc151d1f/raw' >";
+  dailyMessage.innerHTML = "<h2>Wait, is that less days of work?  ...wait, that looks like less... days of... WOHHAAAAAA......!</h2><img src='https://media.tenor.co/images/f1faa8fbf39675dd8e1bd931bc151d1f/raw' >";
 
  }
+
+if (today.getDate() == 22) {
+  body.style.backgroundImage = "url('https://www.soarlegs.com/wp-content/uploads/2016/03/Bangkok.jpg')";
+  dailyMessage.innerHTML = "<h2>Ah, yeah, one more day down, LET'S BOOGIE!!!</h2><img src='https://media.giphy.com/media/PSKAppO2LH56w/giphy.gif'><br><audio controls src='audio/hey1.mp3' autoplay loop></audio>";
+
+ }
+
 });
 
 

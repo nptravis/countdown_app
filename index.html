@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Countdown App</title>
+	<title>Sarah's Countdown App</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster|Patua+One" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 	
 </head>
 <style>
@@ -15,15 +18,94 @@ body {
 }
 
 .jumbotron {
-	background-color: rgba(255, 172, 84, .5);
+	/*background-color: rgba(255, 172, 84, .5);*/
+	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(210, 247, 247, .8), rgba(255, 170, 91, 1));
+  border-radius: 50%; /* Standard syntax */
 }
 .well {
 	min-height: 80px;
 }
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 100px;
+	color: rgb(219, 141, 221);
+	/*position: relative;*/
+	
+}
+h2 {
+	font-family: 'Patua One', cursive;
+}
+
+h3 {
+	font-family: 'Patua One', cursive;
+}
+
+.btn {
+	letter-spacing: 5px;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Patua One', cursive;
+	color: rgb(0, 0, 0);
+	background-color: rgb(219, 141, 221);
+	background: linear-gradient(to bottom right, rgba(210, 247, 247, .9), rgba(219, 141, 221, 1));
+}
+
+#logo {
+	opacity: .7;
+	float: left;
+	
+	width: 130px;
+	height: auto;
+	border-radius: 100px;
+	border-style: solid;
+	border-color: rgb(219, 141, 221);
+	border-width: 5px;
+
+}
+
+.page-header {
+	
+	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(210, 247, 247, .9), rgba(255, 170, 91, 1));
+  border-radius: 50%; /* Standard syntax */
+
+}
+#grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+}
+
+
 </style>
 
 <body id="body">
 <div class="container container-fluid">
+<div class="page-header">
+
+	
+	
+	<img id="logo" src="images/logo.png" alt="">
+	
+
+	
+	<h1>Sarah's Countdown App</h1>
+	
+	
+
+	
+
+
+</div>
 	<div class="jumbotron">
 	<div class="row">
 			<div class="col-sm-4">
@@ -45,5 +127,6 @@ body {
 </div>
 <div id="daily-message"></div>
 	<script src="js/main.js"></script>
+
 </body>
 </html>
