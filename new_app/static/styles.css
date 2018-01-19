@@ -1,0 +1,63 @@
+body {
+	height: 100%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
+	background-size: 100%; 
+	background-color: coral; 
+}
+
+.container {
+	width: 100%;
+}
+ .navbar ul {
+	float: right;
+ }
+
+#login {
+	/*background-color: #e1f7d5;*/
+	text-align: center;
+}
+
+#logout {
+	/*background-color: #e1f7d5;*/
+	text-align: center;
+}
+
+#your_stuff {
+	text-align: center;
+	/*background-color: #f1cbff;*/
+}
+
+#home {
+	/*background-color: #e1f7d5;*/
+	text-align: center;
+	/*flex: 1;*/
+}
+
+#register {
+
+	/*background-color: #f1cbff;*/
+	text-align: center;
+}
+
+#navbar {
+	background-color: #eed8c3;
+	/*border-style: solid;
+	border-width: 3px;
+	border-color: #fbdd4a;*/
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+}
+
+/*flex-grow, flex-shrink and flex-basis
+*//*
+flex-start
+flex-end
+center
+space-between
+space-around
+space-evenly*/
+
+/*#navbar > div {
+	flex: 1;
+	padding: 10px;
+}*/

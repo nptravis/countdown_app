@@ -17,6 +17,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+.well {
+	background-color: rgb(236, 252, 222);
+}
+
 .jumbotron {
 	/*background-color: rgba(255, 172, 84, .5);*/
 	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
@@ -67,7 +71,10 @@ h3 {
 	border-width: 5px;
 
 }
-
+img {
+	display: block;
+	margin: auto;
+}
 .page-header {
 	
 	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
@@ -125,7 +132,7 @@ h3 {
 	</div>
 	<button id="btn" class="btn btn-primary btn-block">How Many Days Are Left?</button>
 </div>
-<div id="daily-message"></div>
+<div id="daily-message" class="center-block text-center"></div>
 	<script src="js/main.js"></script>
 
 </body>

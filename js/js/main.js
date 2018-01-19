@@ -11,17 +11,7 @@ dd='0'+dd
 if(mm<10) {
 mm='0'+mm
 }
-var regents = {
-  may: [9,10,11],
-  june: [1,8,13,14,22,23,27,28]
-};
-var workingDays = {
-	march: [20, 21, 22, 23, 24, 27, 28, 29, 30, 31],
-	april: [3,4,5,6,7,19,20,21,24,25,26,27,28],
-	may: [1,2,3,4,5,8,9,10,11,12,15,16,17,18,19,22,23,24,25,26,30,31],
-	june: [1,2,5,6,7,8,9,12,13,14,22,23,27,28]
 
-};
 
 
 var dat = document.getElementById("dat");
@@ -43,29 +33,7 @@ btn.addEventListener("click", function(){
   	return value > today.getDate();
   }
 
-  if (today.getMonth() <= 2 ) {
-
-  	var num = workingDays.march.filter(isBigEnough);
-  	left.innerHTML = "<h4>" + (num.length + workingDays.april.length + workingDays.may.length + workingDays.june.length) + "</h4>";
-
-  	after.innerHTML = "<h4>" + ((num.length + workingDays.april.length + workingDays.may.length + workingDays.june.length) -15) + "</h4>";
-
-   } else if (today.getMonth() <= 3) {
-     var num1 = workingDays.april.filter(isBigEnough);
-  	left.innerHTML = "<h4>" + (num1.length + workingDays.may.length + workingDays.june.length) + "</h4>";
-  	after.innerHTML = "<h4>" + ((num1.length + workingDays.may.length + workingDays.june.length) -15) + "</h4>";
-  } else if (today.getMonth() <= 4) {
-     var num2 = workingDays.may.filter(isBigEnough);
-       
-        left.innerHTML = "<h4>" + (num2.length + workingDays.june.length) + "</h4>";
-      	after.innerHTML = "<h4>" + (num2.length + workingDays.june.length - (regents.may.filter(isBigEnough).length + regents.june.length)) + "</h4>";
-      
-      
-  } else {
-    var num3 = workingDays.june.filter(isBigEnough);
-   
-  	left.innerHTML = "<h4>" + (num3.length) + "</h4>";
-  	after.innerHTML = "<h4>" + (num3.length - regents.june.filter(isBigEnough).length) + "</h4>";
+ left.innerHTML = "<h4>" + 
   
 };
 
