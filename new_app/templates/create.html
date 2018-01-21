@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Let's create a countdown</h1>
+			<hr>
+  <form action="" method="post" id="create_form">
+  <ul>
+		<label>Date to count towards:</label>
+		<li><input id="date" name="date" type="date"></li>
+		<label>Time to count towards:</label>
+		<li><input id="time" name="time" type="time"></li>
+		<label>Theme:</label>
+		<li><input id="genre" name="genre" type="text"></li>
+	</ul>
+	<button type="submit" class="btn btn-primary btn-block" name="button" value="Continue">Create</button>
+</form>
+{% endblock %}
+

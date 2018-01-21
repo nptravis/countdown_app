@@ -1,21 +1,15 @@
 {% extends "layout.html" %}
 
-
 {% block main %}
-<h1>Register</h1>
+<h1>Already have an account?</h1>
 <div class="row centered-form">
 	<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Please sign up for Count<small> It's free!</small></h3>
+				<h3 class="panel-title">Log in</h3>
 				<div class="panel-body">
 					<form role="form" name="form" method="post">
 						<div class="row">
-							<div class="col-xs-6 col-sm-6 col-md-6">
-								<div class="form-group">
-									<input type="text" name="user_name" id="user_name" placeholder="User Name">
-								</div>
-							</div>
 							<div class="col-xs-6 col-sm-6 col-md-6">
 								<div class="form-group">
 									<input type="email" name="email" id="email" placeholder="Email">
@@ -28,19 +22,13 @@
 									<input type="password" name="password" id="password" placeholder="Password">
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-6">
-								<div class="form-group">
-									<input type="password" name="confirmation" id="confirmation" placeholder="Password (again)">
-								</div>
-							</div>
 						</div>
-						<input type="submit" value="Register"  class="btn btn-info btn-block">
+						<input type="submit" value="Log in"  class="btn btn-info btn-block">
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 {% endblock %}
